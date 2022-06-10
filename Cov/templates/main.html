@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>COVID-19数据可视化与趋势预测系统</title>
+	<script src="../static/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/js/map/china.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/js/theme/customed2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="../static/CSS/main.css"/>
+	<style type="text/css"></style>
+</head>
+<body onresize="refreshPage()">
+<div id="gyroContain">
+	<div id = "title">COVID-19数据可视化与趋势预测系统</div>
+	<div id = "tim"></div>
+	<div id = "left_1"></div>
+	<div id = "left_2">
+		<div class="title">中高风险地区</div>
+		    <div class="ts"></div>
+
+		    <div id="risk_wrapper">
+		        <div id="risk_wrapper_li1">
+		            <ul>
+		            </ul>
+		        </div>
+		        <div id="risk_wrapper_li2"></div>
+		    </div>
+	</div>
+    <div id = "left_3">
+		<div class="title">疫情实时新闻</div>
+		    <div class="ts"></div>
+
+		    <div id="hotsearch_wrapper">
+		        <div id="hotsearch_wrapper_li1">
+		            <ul>
+		            </ul>
+		        </div>
+		        <div id="hotsearch_wrapper_li2"></div>
+		    </div>
+	</div>
+	<div id = "center_1">
+        <div class="title">全国实时数据</div>
+			<div class="ts"></div>
+			<div class="text"><h2>新增确诊人数</h2></div>
+			<div class="text"><h2>现存疑似人数</h2></div>
+			<div class="text"><h2>新增治愈人数</h2></div>
+			<div class="text"><h2>新增死亡人数</h2></div>
+			<div class="china_num"><h1></h1></div>
+			<div class="china_num"><h1></h1></div>
+			<div class="china_num"><h1></h1></div>
+			<div class="china_num"><h1></h1></div>
+	</div>
+    <div id = "center_1_2">
+		<div class="title">全国累计数据</div>
+			<div class="ts"></div>
+            <div class="text"><h2>现存确诊人数</h2></div>
+			<div class="text"><h2>累计确诊人数</h2></div>
+			<div class="text"><h2>累计治愈人数</h2></div>
+			<div class="text"><h2>累计死亡人数</h2></div>
+			<div class="world_num"><h1></h1></div>
+			<div class="world_num"><h1></h1></div>
+			<div class="world_num"><h1></h1></div>
+			<div class="world_num"><h1></h1></div>
+		</div>
+	<div id = "center_2"></div>
+	<div id = "right_1"></div>
+	<div id = "right_2"></div>
+</div>
+</body>
+	<script src="../static/js/ec_center.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/js/ec_left1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/js/ec_right1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/js/ec_right2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../static/js/ec_left2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/js/getdata.js" type="text/javascript" charset="utf-8"></script>
+</html>

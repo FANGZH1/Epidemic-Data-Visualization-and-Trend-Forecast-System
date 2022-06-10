@@ -1,0 +1,246 @@
+body{
+	margin: 0;
+	background: #4e3e53
+}
+
+#title{
+	position: absolute;
+	width: 40%;
+	height: 10%;
+	top: 0;
+	left: 0%;
+	/*background:#001766;*/
+	color: white;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#tim{
+	position: absolute;
+	height: 10%;
+	top: 5%; 
+	right: 5%;
+	color: #FFFFFF;
+	font-size: 20px;
+	/*background:#00ff00;*/
+}
+
+#center_1{
+	position: absolute;
+	width: 40%;
+	height: 15%;
+	top: 10%;
+	left: 0%;
+	right: 60%
+}
+
+#center_1_2{
+	position: absolute;
+	width: 40%;
+	height: 15%;
+	top: 25%;
+	left: 0%;
+	right:70%
+}
+
+#center_1 .title{
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+#center_1_2 .title{
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.world_num{
+	width: 25%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:red;
+	font-size: 20px;
+	/*margin-top: 20px;*/
+}
+
+.china_num {
+	width: 25%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: gold;
+	font-size: 20px;
+	/*margin-top: 20px;*/
+}
+
+.text{
+	width: 25%;
+	float: left;
+	font-family: "幼圆";
+	color:white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text h2{
+	matgin: 0;
+	
+}
+
+#center_2{
+	position: absolute;
+	width: 40%;
+	height: 60%;
+	top: 40%;
+	left: 0%;
+	right: 70%;
+	/*background:#666666*/;
+}
+
+#left_1{
+	position: absolute;
+	width: 30%;
+	height: 45%;
+	top: 10%;
+	left: 40%;
+	/*background: #666666*/;
+}
+#left_2{
+	position: absolute;
+	width: 30%;
+	height: 22.5%;
+	top: 55%;
+	left: 40%;
+	/*background:#777777*/;
+}
+
+#left_3{
+	position: absolute;
+	width: 30%;
+	height: 22%;
+	top: 78%;
+	left: 40%;
+	/*background:#777777*/;
+}
+
+.high_risk{
+	color: red;
+}
+.middle_risk{
+	color: yellow;
+}
+#risk_wrapper{
+	margin-top: 2.5%;
+	overflow: hidden;
+	height: 80%;
+	text-align: center;
+}
+#left_2 .title{
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+#left_2 .ts{
+	color: white;
+	font-size: 14px;
+	text-align: right;
+}
+#left_2 ul{
+	list-style: none;
+}
+#left_2 li{
+	color: white;
+	text-align: justify;
+	font-size: 12px;
+}
+
+
+#hotsearch_wrapper{
+	margin-top: 2.5%;
+	overflow: hidden;
+	height: 80%;
+	text-align: center;
+}
+#left_3 .title{
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+#left_3 .ts{
+	color: white;
+	font-size: 14px;
+	text-align: right;
+}
+#left_3 ul{
+	list-style: none;
+}
+#left_3 li{
+	color: white;
+	text-align: justify;
+	font-size: 12px;
+}
+
+
+
+#right_1{
+	position: absolute;
+	width: 30%;
+	height: 45%;
+	top: 10%;
+	left: 70%;
+	/*background:#666666*/;
+}
+#right_2{
+	position: absolute;
+	width: 30%;
+	height: 45%;
+	top: 55%;
+	left: 70%;
+	/*background:#777777*/;
+}
+
+/*
+此处是设置自动匹配横屏，以适应手机显示 容器使用下面定义的 id: gyroContain
+*/
+@media screen and (orientation: portrait){
+    html{
+        width : 100vmin;
+        height : 100vmax;  /*高度比宽度大*/
+    }
+    body{
+        width : 100vmin;
+        height : 100vmax;
+    }
+    #gyroContain{
+        width : 100vmax;
+        height : 100vmin;
+        transform-origin: top left;
+        transform: rotate(90deg) translate(0,-100vmin);
+    }
+}
+
+@media screen and (orientation: landscape){
+    html{
+        width : 100vmax;
+        height : 100vmin;
+    }
+    body{
+        width : 100vmax;
+        height : 100vmin;
+    }
+    #gyroContain{
+        width : 100vmax;
+        height : 100vmin;
+    }
+}
